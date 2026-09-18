@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andaman Cab Service | Taxi & Tour Service</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071c2c;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #00d4ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #00d4ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .call {
+      background: white;
+      color: #071c2c;
+    }
+
+    section {
+      padding: 60px 7%;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title h2 {
+      font-size: 32px;
+      color: #071c2c;
+    }
+
+    .title p {
+      color: #666;
+      margin-top: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #071c2c;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #008f4c;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .places {
+      background: #eaf7fb;
+    }
+
+    .contact {
+      background: #071c2c;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: #04121d;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 45px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌴 <span>Andaman</span> Cab Service</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Explore <span>Andaman</span> With Us</h1>
+
+      <p>
+        Comfortable • Safe • Reliable Cab Service in Andaman
+      </p>
+
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
+        target="_blank">
+        💬 Book on WhatsApp
+      </a>
+
+      <a class="btn call" href="tel:+917063968769">
+        📞 Call Now
+      </a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="title">
+      <h2>Our Cab Services</h2>
+      <p>Reliable transportation for your Andaman trip</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">✈️</div>
+        <h3>Airport Pickup & Drop</h3>
+        <p>Hassle-free airport transfer with comfortable cabs.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚕</div>
+        <h3>Local Sightseeing</h3>
+        <p>Explore the beautiful attractions of Port Blair with us.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏝️</div>
+        <h3>Island Transfers</h3>
+        <p>Cab assistance for your island travel requirements.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🕐</div>
+        <h3>Full Day Cab</h3>
+        <p>Book a cab for your complete sightseeing day.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="places">
+    <div class="title">
+      <h2>Popular Destinations</h2>
+      <p>Discover the beauty of Andaman</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🌊</div>
+        <h3>Port Blair</h3>
+        <p>Airport, Cellular Jail, Corbyn's Cove and local sightseeing.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏖️</div>
+        <h3>Swaraj Dweep</h3>
+        <p>Enjoy beautiful beaches and island experiences.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌴</div>
+        <h3>Shaheed Dweep</h3>
+        <p>Explore beaches, nature and scenic locations.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="packages">
+    <div class="title">
+      <h2>Cab Packages</h2>
+      <p>Contact us for the latest rates and availability</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Airport Transfer</h3>
+        <div class="price">Contact Us</div>
+        <p>Airport pickup or drop service.</p>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20an%20Airport%20Transfer."
+          target="_blank">
+          Book Now
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Local Sightseeing</h3>
+        <div class="price">Contact Us</div>
+        <p>Comfortable cab for Port Blair sightseeing.</p>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Local%20Sightseeing."
+          target="_blank">
+          Book Now
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Full Day Cab</h3>
+        <div class="price">Contact Us</div>
+        <p>Cab available for your complete day trip.</p>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20Full%20Day%20Cab."
+          target="_blank">
+          Book Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Book Your Cab Today 🚕</h2>
+
+    <p>📍 Port Blair, Andaman & Nicobar Islands</p>
+    <p>📞 +91 70639 68769</p>
+
+    <br>
+
+    <a
+      class="btn whatsapp"
+      href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
+      target="_blank">
+      💬 Book on WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Andaman Cab Service. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
