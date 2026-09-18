@@ -1,374 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andaman Cab Service | Taxi & Tour Service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<title>Andaman Cab Service | Port Blair Taxi & Tours</title>
 
-    body {
-      background: #f5f7fa;
-      color: #222;
-      line-height: 1.6;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
 
-    header {
-      background: #071c2c;
-      color: white;
-      padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+html{scroll-behavior:smooth;}
 
-    .logo {
-      font-size: 23px;
-      font-weight: bold;
-    }
+body{
+  background:#f5f8fa;
+  color:#222;
+}
 
-    .logo span {
-      color: #00d4ff;
-    }
+header{
+  background:#061b2b;
+  color:white;
+  padding:16px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
-    }
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
 
-    .hero {
-      min-height: 78vh;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 30px 20px;
-    }
+.logo span{
+  color:#00d9ff;
+}
 
-    .hero-content {
-      max-width: 800px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:14px;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
+.hero{
+  min-height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:30px 20px;
 
-    .hero h1 span {
-      color: #00d4ff;
-    }
+  background:
+  linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
+  url("https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80");
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 28px;
-    }
+  background-size:cover;
+  background-position:center;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
-    }
+.hero-content{
+  max-width:850px;
+}
 
-    .whatsapp {
-      background: #25d366;
-      color: white;
-    }
+.hero h1{
+  font-size:48px;
+  margin-bottom:12px;
+}
 
-    .call {
-      background: white;
-      color: #071c2c;
-    }
+.hero h1 span{
+  color:#00d9ff;
+}
 
-    section {
-      padding: 60px 7%;
-    }
+.hero p{
+  font-size:20px;
+  margin-bottom:28px;
+}
 
-    .title {
-      text-align: center;
-      margin-bottom: 35px;
-    }
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:5px;
+}
 
-    .title h2 {
-      font-size: 32px;
-      color: #071c2c;
-    }
+.whatsapp{
+  background:#25d366;
+  color:white;
+}
 
-    .title p {
-      color: #666;
-      margin-top: 8px;
-    }
+.call{
+  background:white;
+  color:#061b2b;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-    }
+section{
+  padding:65px 7%;
+}
 
-    .card {
-      background: white;
-      padding: 28px 22px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      text-align: center;
-    }
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
 
-    .card .icon {
-      font-size: 40px;
-      margin-bottom: 12px;
-    }
+.title h2{
+  font-size:32px;
+  color:#061b2b;
+}
 
-    .card h3 {
-      color: #071c2c;
-      margin-bottom: 8px;
-    }
+.title p{
+  color:#666;
+  margin-top:8px;
+}
 
-    .price {
-      color: #008f4c;
-      font-size: 22px;
-      font-weight: bold;
-      margin: 12px 0;
-    }
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+}
 
-    .places {
-      background: #eaf7fb;
-    }
+.card{
+  background:white;
+  padding:28px 22px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 6px 22px rgba(0,0,0,.08);
+}
 
-    .contact {
-      background: #071c2c;
-      color: white;
-      text-align: center;
-    }
+.icon{
+  font-size:42px;
+  margin-bottom:12px;
+}
 
-    .contact h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+.card h3{
+  color:#061b2b;
+  margin-bottom:10px;
+}
 
-    .contact p {
-      margin: 8px 0;
-    }
+.price{
+  font-size:23px;
+  font-weight:bold;
+  color:#008c4a;
+  margin:12px 0;
+}
 
-    footer {
-      background: #04121d;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
+.card p{
+  color:#666;
+}
 
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
+.tour{
+  background:#eaf8fb;
+}
 
-      nav a {
-        margin: 0 6px;
-        font-size: 13px;
-      }
+.car-section{
+  background:white;
+}
 
-      .hero h1 {
-        font-size: 35px;
-      }
+.car-box{
+  max-width:850px;
+  margin:auto;
+  background:#061b2b;
+  color:white;
+  padding:40px 25px;
+  border-radius:20px;
+  text-align:center;
+}
 
-      .hero p {
-        font-size: 17px;
-      }
+.car-box h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
 
-      section {
-        padding: 45px 5%;
-      }
-    }
-  </style>
+.car-box p{
+  color:#d7e7ed;
+  margin:8px;
+}
+
+.badge{
+  display:inline-block;
+  background:#ffd400;
+  color:#111;
+  padding:7px 15px;
+  border-radius:20px;
+  font-weight:bold;
+  margin:15px 0;
+}
+
+.contact{
+  background:#061b2b;
+  color:white;
+  text-align:center;
+}
+
+.contact h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.contact p{
+  margin:8px;
+}
+
+footer{
+  background:#03101a;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav a{
+    margin:0 5px;
+    font-size:12px;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  section{
+    padding:48px 5%;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">🌴 <span>Andaman</span> Cab Service</div>
+<header>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#packages">Packages</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="logo">
+🌴 <span>Andaman</span> Cab Service
+</div>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Explore <span>Andaman</span> With Us</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#tours">Tours</a>
+<a href="#contact">Contact</a>
+</nav>
 
-      <p>
-        Comfortable • Safe • Reliable Cab Service in Andaman
-      </p>
+</header>
 
-      <a
-        class="btn whatsapp"
-        href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
-        target="_blank">
-        💬 Book on WhatsApp
-      </a>
 
-      <a class="btn call" href="tel:+917063968769">
-        📞 Call Now
-      </a>
-    </div>
-  </section>
+<!-- HOME -->
 
-  <section id="services">
-    <div class="title">
-      <h2>Our Cab Services</h2>
-      <p>Reliable transportation for your Andaman trip</p>
-    </div>
+<section class="hero" id="home">
 
-    <div class="cards">
+<div class="hero-content">
 
-      <div class="card">
-        <div class="icon">✈️</div>
-        <h3>Airport Pickup & Drop</h3>
-        <p>Hassle-free airport transfer with comfortable cabs.</p>
-      </div>
+<h1>
+Explore <span>Andaman</span>
+</h1>
 
-      <div class="card">
-        <div class="icon">🚕</div>
-        <h3>Local Sightseeing</h3>
-        <p>Explore the beautiful attractions of Port Blair with us.</p>
-      </div>
+<p>
+Reliable • Comfortable • Safe Cab Service in Port Blair
+</p>
 
-      <div class="card">
-        <div class="icon">🏝️</div>
-        <h3>Island Transfers</h3>
-        <p>Cab assistance for your island travel requirements.</p>
-      </div>
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
+target="_blank">
+💬 Book on WhatsApp
+</a>
 
-      <div class="card">
-        <div class="icon">🕐</div>
-        <h3>Full Day Cab</h3>
-        <p>Book a cab for your complete sightseeing day.</p>
-      </div>
+<a
+class="btn call"
+href="tel:+917063968769">
+📞 Call Now
+</a>
 
-    </div>
-  </section>
+</div>
 
-  <section class="places">
-    <div class="title">
-      <h2>Popular Destinations</h2>
-      <p>Discover the beauty of Andaman</p>
-    </div>
+</section>
 
-    <div class="cards">
 
-      <div class="card">
-        <div class="icon">🌊</div>
-        <h3>Port Blair</h3>
-        <p>Airport, Cellular Jail, Corbyn's Cove and local sightseeing.</p>
-      </div>
+<!-- SERVICES -->
 
-      <div class="card">
-        <div class="icon">🏖️</div>
-        <h3>Swaraj Dweep</h3>
-        <p>Enjoy beautiful beaches and island experiences.</p>
-      </div>
+<section id="services">
 
-      <div class="card">
-        <div class="icon">🌴</div>
-        <h3>Shaheed Dweep</h3>
-        <p>Explore beaches, nature and scenic locations.</p>
-      </div>
+<div class="title">
 
-    </div>
-  </section>
+<h2>Our Cab Services</h2>
 
-  <section id="packages">
-    <div class="title">
-      <h2>Cab Packages</h2>
-      <p>Contact us for the latest rates and availability</p>
-    </div>
+<p>
+Professional cab service for Port Blair and South Andaman tours
+</p>
 
-    <div class="cards">
+</div>
 
-      <div class="card">
-        <h3>Airport Transfer</h3>
-        <div class="price">Contact Us</div>
-        <p>Airport pickup or drop service.</p>
 
-        <a
-          class="btn whatsapp"
-          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20an%20Airport%20Transfer."
-          target="_blank">
-          Book Now
-        </a>
-      </div>
+<div class="cards">
 
-      <div class="card">
-        <h3>Local Sightseeing</h3>
-        <div class="price">Contact Us</div>
-        <p>Comfortable cab for Port Blair sightseeing.</p>
 
-        <a
-          class="btn whatsapp"
-          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Local%20Sightseeing."
-          target="_blank">
-          Book Now
-        </a>
-      </div>
+<div class="card">
 
-      <div class="card">
-        <h3>Full Day Cab</h3>
-        <div class="price">Contact Us</div>
-        <p>Cab available for your complete day trip.</p>
+<div class="icon">✈️</div>
 
-        <a
-          class="btn whatsapp"
-          href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20Full%20Day%20Cab."
-          target="_blank">
-          Book Now
-        </a>
-      </div>
+<h3>Airport Pickup & Drop</h3>
 
-    </div>
-  </section>
+<div class="price">₹500 Starting</div>
 
-  <section id="contact" class="contact">
-    <h2>Book Your Cab Today 🚕</h2>
+<p>
+Comfortable airport transfer to your hotel and city locations.
+</p>
 
-    <p>📍 Port Blair, Andaman & Nicobar Islands</p>
-    <p>📞 +91 70639 68769</p>
+</div>
 
-    <br>
 
-    <a
-      class="btn whatsapp"
-      href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
-      target="_blank">
-      💬 Book on WhatsApp
-    </a>
-  </section>
+<div class="card">
 
-  <footer>
-    © 2026 Andaman Cab Service. All Rights Reserved.
-  </footer>
+<div class="icon">🚕</div>
+
+<h3>Port Blair Local</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Local sightseeing covering the major attractions of Port Blair.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌅</div>
+
+<h3>Chidiya Tapu</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Enjoy the beautiful beach and famous sunset experience.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏝️</div>
+
+<h3>Wandoor</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Relax at Wandoor Beach and explore the surrounding area.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- TOURS -->
+
+<section class="tour" id="tours">
+
+<div class="title">
+
+<h2>Popular Port Blair Tours</h2>
+
+<p>
+Choose your sightseeing package
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>Port Blair City Tour</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Cellular Jail, Corbyn's Cove, Samudrika Museum,
+Anthropological Museum, Chatham and other city attractions.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Port%20Blair%20City%20Tour."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌴</div>
+
+<h3>Port Blair Full Day</h3>
+
+<div class="price">₹2,500 Starting</div>
+
+<p>
+Full-day cab at your disposal for Port Blair sightseeing
+and multiple tourist locations.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20Port%20Blair%20Full%20Day%20Cab."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌅</div>
+
+<h3>Chidiya Tapu Sunset Tour</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Port Blair to Chidiya Tapu and return with
+comfortable private cab service.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Chidiya%20Tapu%20Tour."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌊</div>
+
+<h3>Wandoor Tour</h3>
+
+<div class="price">₹1,800 Starting</div>
+
+<p>
+Comfortable round-trip cab from Port Blair to Wandoor.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Wandoor%20Tour."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⛰️</div>
+
+<h3>Mount Manipur / Harriet</h3>
+
+<div class="price">₹2,500 Starting</div>
+
+<p>
+Explore the scenic hill and forest areas around Port Blair.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Mount%20Manipur%20Tour."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🪨</div>
+
+<h3>Baratang Day Trip</h3>
+
+<div class="price">₹4,500 Starting</div>
+
+<p>
+Early morning Baratang trip with Limestone Caves,
+Mangrove Boat Ride and Mud Volcano.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20Baratang%20Day%20Trip."
+target="_blank">
+Book Now
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CAR -->
+
+<section class="car-section">
+
+<div class="car-box">
+
+<h2>🚕 Our Premium Cab</h2>
+
+<div class="badge">
+YELLOW BOARD • COMMERCIAL
+</div>
+
+<h3>Maruti Suzuki Ertiga ZXI+</h3>
+
+<p>
+Comfortable • Spacious • Family Friendly
+</p>
+
+<p>
+Perfect for Airport Transfers, Local Sightseeing
+and Andaman Tours.
+</p>
+
+<p>
+👨‍👩‍👧‍👦 Comfortable seating for families and groups
+</p>
+
+<br>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20your%20Ertiga."
+target="_blank">
+🚕 Book Ertiga
+</a>
+
+</div>
+
+</section>
+
+
+<!-- IMPORTANT NOTE -->
+
+<section>
+
+<div class="title">
+
+<h2>Important Information</h2>
+
+<p>
+Plan your trip with confidence
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">📅</div>
+
+<h3>Advance Booking</h3>
+
+<p>
+We recommend advance booking for airport transfers
+and long-distance tours.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🪪</div>
+
+<h3>Baratang Trip</h3>
+
+<p>
+Baratang trips are subject to route, permit,
+timing and local administration requirements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💰</div>
+
+<h3>Transparent Pricing</h3>
+
+<p>
+Displayed prices are starting prices.
+Final fare may vary according to vehicle,
+route, date and passenger requirements.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Book Your Cab Today 🚕</h2>
+
+<p>📍 Port Blair, Andaman & Nicobar Islands</p>
+
+<p>📞 +91 70639 68769</p>
+
+<br>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/917063968769?text=Hello%20Andaman%20Cab%20Service%2C%20I%20want%20to%20book%20a%20cab."
+target="_blank">
+💬 Book on WhatsApp
+</a>
+
+<a
+class="btn call"
+href="tel:+917063968769">
+📞 Call Now
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 Andaman Cab Service • Port Blair, Andaman & Nicobar Islands
+
+</footer>
 
 </body>
 </html>
